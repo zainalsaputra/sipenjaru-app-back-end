@@ -1,0 +1,44 @@
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/courses
+
+###
+GET http://localhost:3000/courses/08b00eb6-5f9c-45fd-ba29-1c0980dca959
+
+###
+DELETE  http://localhost:3000/courses/08b00eb6-5f9c-45fd-ba29-1c0980dca959
+
+###
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{
+    "name" : "Informatika 2023",
+    "beforeTime" : "210703",
+    "afterTime" : "68290298",
+    "session" : "62812"
+}
+
+###
+PUT http://localhost:3000/courses/08b00eb6-5f9c-45fd-ba29-1c0980dca959
+Content-Type: application/json
+
+{
+    "name" : "Informatika 2023",
+    "beforeTime" : "210703",
+    "afterTime" : "68290298",
+    "session" : "62812"
+}
+
+###
+PUT http://localhost:3000/courses/08b00eb6-5f9c-45fd-ba29-1c0980dca959
+Content-Type: application/json
+
+{
+    "name" : "Kedokteran 2021",
+    "beforeTime" : "54322",
+    "afterTime" : "98323490",
+    "session" : "342341"
+}
+
