@@ -14,7 +14,13 @@ const sequelize = new Sequelize(
     host: envConfig.host,
     dialect: envConfig.dialect,
     logging: envConfig.logging || false,
-    dialectModule: pg
+    dialectModule: pg,
+    dialectOptions: {
+      ssl: {
+        require: true,  // Wajib menggunakan SSL
+        rejectUnauthorized: false,  // Ini untuk melewati sertifikat SSL yang tidak terverifikasi
+      }
+    }
   },
 );
 

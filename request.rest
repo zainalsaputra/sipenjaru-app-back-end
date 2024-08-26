@@ -21,6 +21,17 @@ Content-Type: application/json
 }
 
 ###
+POST https://sipenjaru-app-back-end-le6b.vercel.app/courses
+Content-Type: application/json
+
+{
+    "name" : "Informatika 2023",
+    "beforeTime" : "210703",
+    "afterTime" : "68290298",
+    "session" : "62812"
+}
+
+###
 PUT http://localhost:3000/courses/08b00eb6-5f9c-45fd-ba29-1c0980dca959
 Content-Type: application/json
 
