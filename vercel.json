@@ -14,5 +14,8 @@
             "src": "/(.*)",
             "dest": "app/server.js"
         }
-    ]
+    ],
+    "hooks": {
+        "build": "npm run migrate"
+      }
 }

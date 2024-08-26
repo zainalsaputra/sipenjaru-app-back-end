@@ -21,10 +21,10 @@ Content-Type: application/json
 }
 
 ###
-GET https://sipenjaru-app-back-end-le6b.vercel.app/courses
+GET https://sipenjaru-app-back-end.vercel.app/courses
 
 ###
-POST https://sipenjaru-app-back-end-le6b.vercel.app/courses
+POST https://sipenjaru-app-back-end.vercel.app/courses
 Content-Type: application/json
 
 {
