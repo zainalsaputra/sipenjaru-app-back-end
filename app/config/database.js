@@ -12,16 +12,11 @@ const sequelize = new Sequelize(
   envConfig.password,
   {
     host: envConfig.host,
-    dialect: 'postgres',
+    dialect: envConfig.dialect,
     logging: envConfig.logging || false,
     dialectModule: pg,
-    dialectOptions: {
-      ssl: {
-        require: true,  // Wajib menggunakan SSL
-        rejectUnauthorized: false,  // Ini untuk melewati sertifikat SSL yang tidak terverifikasi
-      }
-    }
-  },
+    dialectOptions: envConfig.dialectOptions // Ensure this is passed to Sequelize
+  }
 );
 
 module.exports = sequelize;
