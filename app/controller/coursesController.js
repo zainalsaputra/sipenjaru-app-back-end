@@ -51,7 +51,7 @@ class CourseController {
       //   return res.status(400).json({ errors: errors.array() });
       // }
       if (!errors.isEmpty()) {
-        const formattedErrors = errors.array().map(error => ({
+        const formattedErrors = errors.array().map((error) => ({
           field: error.param,
           message: error.msg,
         }));
@@ -81,7 +81,7 @@ class CourseController {
     try {
       const errors = validationResult(req);
       if (!errors.isEmpty()) {
-        const formattedErrors = errors.array().map(error => ({
+        const formattedErrors = errors.array().map((error) => ({
           field: error.param,
           message: error.msg,
         }));
