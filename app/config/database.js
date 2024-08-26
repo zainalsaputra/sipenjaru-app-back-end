@@ -12,7 +12,7 @@ const sequelize = new Sequelize(
   envConfig.password,
   {
     host: envConfig.host,
-    dialect: envConfig.dialect,
+    dialect: envConfig.dialect || 'postgres',
     logging: envConfig.logging || false,
     dialectModule: pg,
     dialectOptions: {
