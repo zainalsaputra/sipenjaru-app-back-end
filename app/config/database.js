@@ -1,4 +1,3 @@
-// config/database.js
 const { Sequelize } = require('sequelize');
 const config = require('../../config/config.js');
 const pg = require('pg');
@@ -15,7 +14,7 @@ const sequelize = new Sequelize(
     dialect: envConfig.dialect,
     logging: envConfig.logging || false,
     dialectModule: pg,
-    dialectOptions: envConfig.dialectOptions // Ensure this is passed to Sequelize
+    dialectOptions: envConfig.dialectOptions
   }
 );
 
